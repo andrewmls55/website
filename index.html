@@ -219,7 +219,6 @@
             <div class="dualContent">
                 <div id="responseMessage" style="text-align: center; display: none"></div>
                 <form id="contactForm" method="POST" action="https://api.lewiscoding.com/submit-form">
-                    <input type="hidden" name="key" value=":$KgZqNS{u/*F!}+qNpVQ@;C[FpRyA">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -233,45 +232,6 @@
                 </form>
             </div>
         </section>
-
-        <script>
-            const form = document.getElementById('contactForm');
-            const responseDiv = document.getElementById('responseMessage');
-
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault(); // stop normal form submit
-
-                responseDiv.style.display = 'none'; // hide old messages
-
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData.entries()); // convert to object
-
-                try {
-                    const res = await fetch(form.action, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(data)
-                    });
-                    if (res.status === 204) {
-                        responseDiv.style.color = 'red';
-                        responseDiv.textContent = 'Bot submission detected, please email me directly if you wish to get in touch.';
-                    } else if (res.ok) {
-                        responseDiv.textContent = 'Form submitted successfully';
-                    } else if (res.status === 404) {
-                        responseDiv.style.color = 'red';
-                        responseDiv.textContent = 'Form not found (404). Check your form key.';
-                    } else {
-                        responseDiv.style.color = 'red';
-                        responseDiv.textContent = `Error: ${res.status} ${res.statusText}`;
-                    }
-                } catch (err) {
-                    responseDiv.style.color = 'red';
-                    responseDiv.textContent = 'Network error. Try again later.';
-                }
-
-                responseDiv.style.display = 'block';
-            });
-            </script>
 
         <section style = "display: flex; justify-content: center; align-items: center; flex-direction: column;">
             <!--temporary code - loading cogs-->
