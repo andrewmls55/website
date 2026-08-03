@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Lewis-Smith</title>
+    <link rel="icon" href="../assets/svg/brain.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://www.andrewlewissmith.com/credits/">
+    <meta name="description" content="Credits for third-party assets used in Andrew Lewis-Smith's project.">
+    <meta name="keywords" content="Andrew Lewis-Smith, credits, third-party assets, licenses, resources">
+    <meta name="author" content="Joshua Lewis">
+    <meta name="developer" content="Joshua Lewis">
+
+    <!--inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--local styles-->
+    <link rel="stylesheet" href="../assets/styles/base.css">
+
+    <script src="../assets/scripts/navbar.js" defer></script>
+
+
+    <style>
+        section{
+            padding: 0;
+            border-radius: unset;
+            border: unset;
+            background: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            overflow: visible;
+        }
+
+        .assetGrid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 3vh;
+        }  
+
+        .asset{overflow: hidden;}
+
+        .assetGrid a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e0d2b3;
+            color: #674F2D;
+            border: #674F2D solid 2px;
+            border-radius: 5vh;
+            padding: 5vh 5vh;
+        }
+        .assetGrid a img {
+            width: 50%;
+            transition: scale 0.3s ease;
+        }
+        .assetGrid a:visited {color: #674F2D;}
+        .assetGrid a:hover  {box-shadow: 0 4px 8px rgba(103, 79, 45, 0.3);}
+        .assetGrid a:hover img {scale: 1.1;}
+
+        h2 {
+            margin-bottom: 2vh;
+        }
+
+        @media (max-width: 708px) {
+            nav {display: unset;}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div><img src="../assets/svg/brain.svg" alt="brain"><spam>Andrew Lewis-Smith</spam></div>
+        <nav><a href="../">RETURN HOME</a></nav>
+    </header>
+    
+    <main>
+        <section style="margin-top: 70px;">
+            <h1>Credits</h1>
+            <p>Below is a list of all third-party assets used in this project, along with their respective sources and licenses. Massive thanks to the creators for sharing their awesome work!</p>
+            
+            <div class="assetGrid">
+                <a class="asset" href="https://www.svgrepo.com/svg/521533/brain" target="_blank">
+                    <img src="../assets/svg/brain.svg" alt="brain">
+                    <h2>Brain</h2>
+                    <p><strong>AUTHOR:</strong> Konstantin Filatov</p>
+                    <p><strong>LICENSE:</strong> CC Attribution License</p>
+                </a>
+                <a class="asset" href="https://www.svgrepo.com/svg/103333/give-love" target="_blank">
+                    <img src="../assets/svg/compassion.svg" alt="hand-with-heart">
+                    <h2>Give Love</h2>
+                    <p><strong>AUTHOR:</strong> SVG Repo</p>
+                    <p><strong>LICENSE:</strong> CC0 License</p>
+                </a>
+                <a class="asset" href="https://www.svgrepo.com/svg/524732/meditation-round" target="_blank">
+                    <img src="../assets/svg/meditation.svg" alt="person-meditating">
+                    <h2>Meditation</h2>
+                    <p><strong>AUTHOR:</strong> Solar Icons</p>
+                    <p><strong>LICENSE:</strong> CC Attribution License</p>
+                </a>
+                <a class="asset" href="https://www.svgrepo.com/svg/313816/dharmachakra-solid" target="_blank">
+                    <img src="../assets/svg/dharmachakra.svg" alt="dharmachakra">
+                    <h2>Dharmachakra</h2>
+                    <p><strong>AUTHOR:</strong> Icons8</p>
+                    <p><strong>LICENSE:</strong> MIT Licence</p>
+                </a>
+                <a class="asset" href="https://www.svgrepo.com/svg/357478/clinic-medical" target="_blank">
+                    <img src="../assets/svg/clinicSupervision.svg" alt="clinical-supervision">
+                    <h2>Clinic</h2>
+                    <p><strong>AUTHOR:</strong> Iconscout</p>
+                    <p><strong>LICENSE:</strong> Apache Licence</p>
+                </a>
+                <a class="asset" href="https://www.svgrepo.com/svg/226808/writer" target="_blank">
+                    <img src="../assets/svg/pen.svg" alt="writer">
+                    <h2>Writer</h2>
+                    <p><strong>AUTHOR:</strong> SVG Repo</p>
+                    <p><strong>LICENSE:</strong> CC0 Licence</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <p><br><br><br><br><br><br><br></p>
+    
+    <footer>
+        <p>&copy; 2025 Andrew Lewis-Smith</p>
+        <p>Website by <a href = "https://www.lewiscoding.com/web">Joshua Lewis</a></p>
+        <p>You're already on the credits page</p>
+    </footer>
+
+</body>
+</html>

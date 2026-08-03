@@ -1,0 +1,47 @@
+#hero { display: flex; height: 100%; margin: calc(70px + 3vh) 10vh 10vh 10vh; gap: 5vh; box-sizing: border-box; justify-content: space-between; flex-direction: row; text-align: unset; border: unset; padding: unset; background-color: unset; }
+.heroText { width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.heroText a { color: white; background-color: #674F2D; padding: 10px 20px; border-radius: 2rem; font-weight: bold; font-size: 1rem; transition: background-color 0.3s ease; margin-top: 2vh; }
+.heroText a:hover { background-color: #9D825D; }
+.heroImgContainer { width: 50%; display: flex; align-items: center; justify-content: center; overflow: hidden; box-sizing: border-box; }
+.heroImg { width: 100%; height: 100%; border-radius: 5vh; object-fit: cover; }
+
+
+#about-me { display: flex; flex-direction: row; justify-content: center; align-items: top; gap: 5vh; }
+#about-me img { border-radius: 2vh; }
+.about-media { display: flex; flex-direction: column; align-items: center; gap: 2vh; flex-shrink: 0; }
+.about-media .profile-picture { max-width: 260px; }
+.verification-seals { display: flex; flex-direction: column; align-items: center; gap: 1.5vh; width: 100%; }
+.verification-seals .psa-seal { width: 140px; max-width: 100%; height: auto; background-color: white; }
+
+
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2vh; margin: 10px 0 5vh 0; }
+.service { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2vh; text-align: center; background-color: #e0d2b371; border-radius: 2vh; padding: 2vh; box-sizing: border-box; overflow: visible; }
+.service img { width: 50%; max-height: 100px; }
+
+
+#contact { display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 5vh; }
+.dualContent { flex: 1; display: flex; flex-direction: column; }
+.dualContent > form { display: flex; flex-direction: column; gap: 1vh; }
+.dualContent > form input, .dualContent > form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+.dualContent > form button { padding: 10px; border: none; border-radius: 5px; background-color: #674F2D; color: white; font-size: 1rem; cursor: pointer; transition: background-color 0.3s ease; }
+.dualContent > form button:hover { background-color: #9D825D; }
+.dualContent > form textarea { resize: vertical; min-height: 100px; }
+
+
+.blog { border-radius: 10px; padding: 15px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background-color: #e0d2b371; }
+
+
+@media (max-width: 768px) {
+    #about-me { flex-direction: column; align-items: flex-start; gap: 1vh; }
+    .about-media { align-items: flex-start; }
+    #hero { flex-direction: column; margin: 70px 5vh 5vh 5vh; }
+    .heroImgContainer { width: 100%; margin: 0; }
+    .heroText { width: 100%; margin: 5vh 0 0 0; }
+    #contact { flex-direction: column; gap: 2vh; }
+    .dualContent { width: 100%; }
+}
+
+@media (min-width: 1280px) {
+    #hero { height: calc(100vh - 70px - 10vh); justify-content: center; }
+    .heroImg { width: 100%; height: 100%; }
+}
